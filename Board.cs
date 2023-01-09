@@ -11,14 +11,14 @@ class Board {
     public bool IsPlayerWinner(string player) {
         bool isWinner = false;
 
-        if ((board[0] == player && board[1] == player && board[2] == player)
-            || (board[3] == player && board[4] == player && board[5] == player)
-            || (board[6] == player && board[7] == player && board[8] == player)
-            || (board[0] == player && board[3] == player && board[6] == player)
-            || (board[1] == player && board[4] == player && board[7] == player)
-            || (board[2] == player && board[5] == player && board[8] == player)
-            || (board[0] == player && board[4] == player && board[8] == player)
-            || (board[2] == player && board[4] == player && board[6] == player)
+        if ((spaces[0] == player && spaces[1] == player && spaces[2] == player)
+            || (spaces[3] == player && spaces[4] == player && spaces[5] == player)
+            || (spaces[6] == player && spaces[7] == player && spaces[8] == player)
+            || (spaces[0] == player && spaces[3] == player && spaces[6] == player)
+            || (spaces[1] == player && spaces[4] == player && spaces[7] == player)
+            || (spaces[2] == player && spaces[5] == player && spaces[8] == player)
+            || (spaces[0] == player && spaces[4] == player && spaces[8] == player)
+            || (spaces[2] == player && spaces[4] == player && spaces[6] == player)
             )
         {
             isWinner = true;
